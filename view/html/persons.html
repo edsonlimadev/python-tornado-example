@@ -1,0 +1,12 @@
+<html>
+   <head>
+      <title>{{ title }}</title>
+   </head>
+   <body>
+     <ul>
+       {% for person in persons %}
+         <li><a href="/persons/{{ person.email }}">{{ person.name }}</a></li>
+       {% end %}
+     </ul>
+   </body>
+</html>

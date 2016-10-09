@@ -1,0 +1,12 @@
+<html>
+   <head>
+      <title>{{ title }}</title>
+   </head>
+   <body>
+     <ul>
+       {% for item in items %}
+         <li>{{ item.type }} - {{ item.name }} ({{ item.status }})</li>
+       {% end %}
+     </ul>
+   </body>
+</html>
